@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  scripts: [
+  script: [
     {
       type: 'text/javascript',
       src: 'https://www.googletagmanager.com/gtag/js?id=G-NQ5XEWSG9T',
