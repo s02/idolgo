@@ -1,5 +1,26 @@
 <script setup>
 useHead({
+  scripts: [
+    {
+      type: 'text/javascript',
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-NQ5XEWSG9T',
+      async: true,
+      tagPosition: 'bodyClose'
+    },
+    {
+      type: 'text/javascript',
+      innerHTML: `
+        window.dataLayer = window.dataLayer || []
+        function gtag() {
+          dataLayer.push(arguments)
+        }
+        gtag('js', new Date())
+
+        gtag('config', 'G-NQ5XEWSG9T')
+      `,
+      tagPosition: 'bodyClose'
+    }
+  ],
   link: [
     {
       rel: 'preconnect',
